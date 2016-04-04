@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['kenta.motoyanagi@glpgs.com']
 
   spec.summary       = 'injected_property is gem making it possible to inject processing for accessors.'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/galapagos/injected_property'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`

@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install injected_property -l 'git://github.com/path/to/url'
+    $ gem install injected_property -l 'git://github.com/galapagos/injected_property'
 
 ## Usage
 
