@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+ROOT_DIR=$(cd $(dirname $0)/..;pwd)
+GIT_DIR="${ROOT_DIR}/.git"
+HOOK_SCRIPT_DIR="${ROOT_DIR}/hooks"
+
+bundle install --path=.bundle
+
+cat << EOS > ${GIT_DIR}/hooks/pre-commit
+#!/usr/bin/env bash
+
+local_hook="${HOOK_SCRIPT_DIR}/pre-commit"
+
+if [ -f "\$local_hook" ]; then
+  . "\$local_hook"
+fi
+EOS
