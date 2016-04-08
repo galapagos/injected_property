@@ -9,5 +9,6 @@
 /tmp/
 /.idea/
 /injected_property.iml
+/.ruby-version
 
 !.keep

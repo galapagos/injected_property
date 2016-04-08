@@ -1,4 +1,3 @@
-require 'injected_property/version'
 require 'active_support/concern'
 
 module InjectedProperty
@@ -30,9 +29,13 @@ module InjectedProperty
       @@setters = @@properties.keys.each_with_object('=').map(&:+)
       @@getters = @@properties.keys
 
-      private
+      define_private_accessors *properties
+    end
 
+    def self.define_private_accessors(*properties)
       attr_accessor *properties
+      private *properties
+      private *(properties.map(&:to_s).each_with_object('=').map(&:+))
     end
 
     public
