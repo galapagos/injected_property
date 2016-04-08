@@ -1,5 +1,9 @@
 # InjectedProperty
 
+[![Build Status](https://travis-ci.org/galapagos/injected_property.svg?branch=master)](https://travis-ci.org/galapagos/injected_property)
+[![Code Climate](https://codeclimate.com/github/galapagos/injected_property/badges/gpa.svg)](https://codeclimate.com/github/galapagos/injected_property)
+[![Test Coverage](https://codeclimate.com/github/galapagos/injected_property/badges/coverage.svg)](https://codeclimate.com/github/galapagos/injected_property/coverage)
+
 injected_property is gem making it possible to inject processing for accessors.
 
 ## Installation
